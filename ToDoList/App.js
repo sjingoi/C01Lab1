@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import ToDoList from './components/ToDoList';
+import 'react-native-get-random-values'
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <ToDoList initialTaskTitles={["task1", "task2"]}/>
+      <ToDoList initialTaskTitles={[]}/>
       <StatusBar style="auto" />
     </View>
   );
